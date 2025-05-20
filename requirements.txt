@@ -1,0 +1,17 @@
+dataset==1.6.2
+imagehash==4.3.2
+matplotlib==3.10.1
+natsort==8.4.0
+numpy==1.23.5
+opencv_python==4.11.0.86
+pandas==2.2.3
+Pillow==11.2.1
+prefetch_generator==1.0.3
+scikit_learn==1.6.1
+scipy==1.15.2
+skimage==0.0
+torch==1.13.0
+torchsummary==1.5.1
+torchvision==0.14.0
+tqdm==4.67.1
+visdom==0.2.4
