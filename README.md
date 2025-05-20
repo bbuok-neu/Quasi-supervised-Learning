@@ -1,4 +1,4 @@
-﻿This repository implements an approximately-supervised learning approach for unpaired MR-to-CT synthesis. Below is the dataset preparation and training process.  
+﻿This repository implements an approximately-supervised learning approach for unpaired medical image translation. Below is the dataset preparation and training process.  
 # Dataset Preparation
 The required dataset structure is as follows:
 ```
@@ -33,8 +33,8 @@ the left column for the source domain patch path and the right column for the ta
 # Training
 Use train.py to train the model using the generated patch pairs.
 Example Command:
-```python train.py --batch_size 16 --train_size 64 --num_epochs 100 --learning_rate 2e-4 --dataset_path datasets/unpaired_64patch_train.pkl --save_path weights/```
+```python train.py --batch_size 16 --train_size 64 --num_epochs 100 --learning_rate 2e-4 --dataset_path your_patch_pairs_dataframe.pkl --save_path checkpoints/```
 # Testing
 Use test.py to evaluate the trained model on the paired test dataset (testA and testB).
 Example Command:
-```python test.py --mr_dir datasets/testA --ct_dir datasets/testB --size 256 --model_path weights/as64_attunet_100_epoch.pt --output_dir results/```
+```python test.py --mr_dir datasets/testA --ct_dir datasets/testB --size 256 --model_path checkpoints/checkpoint_to_load.pt --output_dir results/```
