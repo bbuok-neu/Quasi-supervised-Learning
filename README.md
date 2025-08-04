@@ -1,4 +1,4 @@
-﻿This repository implements an approximately-supervised learning approach for unpaired medical image translation. Below is the dataset preparation and training process.  
+﻿This repository implements an quasi-supervised learning approach for unpaired medical image translation. Below is the dataset preparation and training process.  
 # Dataset Preparation
 The required dataset structure is as follows:
 ```
